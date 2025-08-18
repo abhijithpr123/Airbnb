@@ -5,52 +5,992 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&" />
 </head>
 
 <body>
     <div class="main">
-        <div class="nav flex h-25 items-center">
-            <div class="logo flex-1 flex items-center">
-                <a href="" class="ml-10"><img src="/assets/logo1.png" alt="" class="h-8 w-30"></a>
+        <div class="nav bg-gray-100 flex h-50 items-center justify-center gap-5 flex flex-col">
+            <div class="flex w-full">
+                <div class="logo flex-1 flex items-center">
+                    <a href="" class="ml-10"><img src="/assets/logo1.png" alt="" class="h-8 w-30"></a>
+                </div>
+                <div class="navlist flex-3 h-[100%] items-center">
+                    <ul class="flex gap-3 justify-evenly w-[65%] h-full items-center m-auto font-bold text-gray-500">
+                        <li><a href="" class="hover:underline space-y-2 underline-offset-6 decoration-2">
+                                <div class="licontent flex items-center m-auto hover:text-black">
+                                    <div class=" flex items-center gap-3">
+                                        <img src="/assets/home.png" alt="" class="h-11 w-11">
+                                        <p>Homes</p>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li><a href="" class="hover:underline space-y-2 underline-offset-6 decoration-2">
+                                <div class="licontent flex items-center m-auto hover:text-black">
+                                    <div class=" flex items-center gap-3">
+                                        <img src="/assets/balloon4.jpeg" alt="" class="h-11 w-11">
+                                        <p>Experiences</p>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li><a href="" class="hover:underline space-y-2 underline-offset-6 decoration-2">
+                                <div class="licontent flex items-center m-auto hover:text-black">
+                                    <div class=" flex items-center gap-3">
+                                        <img src="/assets/bell.jpeg" alt="" class="h-11 w-11">
+                                        <p>Services</p>
+                                    </div>
+                                </div>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="menu flex-1 items-center flex gap-3">
+                    <button class="h-10 w-40 hover:bg-gray-200 rounded-3xl"><a href="">Become a host</a></button>
+                    <button class="h-10 w-10 bg-gray-200 hover:bg-gray-300 rounded-3xl pt-1"><a href="">
+                            <span class="material-symbols-outlined">language</span>
+                        </a></button>
+                    <button class="h-10 w-10 bg-gray-200 hover:bg-gray-300 rounded-3xl pt-1"><a href="">
+                            <span class="material-symbols-outlined">menu</span>
+                        </a></button>
+                </div>
+
             </div>
-            <div class="navlist flex-3 h-[100%] items-center">
-                <ul class="flex gap-3 justify-evenly w-[65%] h-full items-center m-auto font-bold text-gray-500">
-                    <li><a href="">
-                            <div class="licontent flex items-center m-auto">
-                                <div class=" flex items-center gap-3">
-                                <img src="/assets/home.png" alt="" class="h-11 w-11">
-                                <p>Homes</p>
-                                </div>
-                            </div>
-                        </a></li>
-                    <li><a href="">
-                            <div class="licontent flex items-center m-auto">
-                                <div class=" flex items-center gap-3">
-                                <img src="/assets/balloon4.jpeg" alt="" class="h-11 w-11">
-                                <p>Experiences</p>
-                                </div>
-                            </div>
-                        </a></li>
-                    <li><a href="">
-                            <div class="licontent flex items-center m-auto">
-                                <div class=" flex items-center gap-3">
-                                <img src="/assets/bell.jpeg" alt="" class="h-11 w-11 hover:h-12 w-11">
-                                <p>Services</p>
-                                </div>
-                            </div>
-                        </a></li>
-                </ul>
+            <div class="h-18 w-[65%] bg-gray-300 flex gap-6 items-center rounded-[50px]">
+                <div class="flex flex-2 justify-center flex-col pl-10 rounded-[50px] h-full w-full hover:bg-gray-100">
+                    <div class="">
+                        <p>Where</p>
+                    </div>
+                    <div class="">
+                        <input type="search" placeholder="Search destinations" class="text-gray-900">
+                    </div>
+                </div>
+                <div class="flex flex-1 justify-center pl-5 flex-col rounded-[50px] h-full w-full hover:bg-gray-100">
+                    <div class="">
+                        <p>Check in</p>
+                    </div>
+                    <div class="">
+                        <p class="text-gray-600">Add dates</p>
+                    </div>
+                </div>
+                <div class="flex flex-1 flex-col rounded-[50px] px-5 justify-center h-full w-full hover:bg-gray-100">
+                    <div class="">
+                        <p>Check out</p>
+                    </div>
+                    <div class="">
+                        <p class="text-gray-600">Add dates</p>
+                    </div>
+                </div>
+                <div class="flex flex-2 pl-5 justify-between pr-5 rounded-[50px] h-full w-full hover:bg-gray-100">
+                    <div class="relative top-3">
+                        <div class="">
+                            <p>Who</p>
+                        </div>
+                        <div class="flex  items-center">
+                            <p class="text-gray-600">Add guests</p>
+
+                        </div>
+
+                    </div>
+                    <div class="w-13 h-13 bg-orange-200 items-center rounded-3xl relative top-3">
+                        <a href=""><span
+                                class="material-symbols-outlined text-white relative top-3 left-3">search</span></a>
+                    </div>
+
+                </div>
             </div>
-            <div class="menu flex-1 items-center flex gap-3">
-                <button class="h-10 w-40 hover:bg-gray-200 rounded-3xl"><a href="">Become a host</a></button>
-                <button class="h-10 w-10 bg-gray-200 rounded-3xl pt-1"><a href="">
-                    <span class="material-symbols-outlined">language</span>
-                </a></button>
-                <button class="h-10 w-10 bg-gray-200 rounded-3xl pt-1"><a href="">
-                    <span class="material-symbols-outlined">menu</span>
-                </a></button>
+        </div>
+        <div class="content1 w-[90%] m-auto mb-10">
+            <h1 class="font-bold text-xl ">Popular homes in Bengaluru ></h1>
+            <div class="cnt1 flex gap-3">
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+               <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        
+        <div class="content1 w-[90%] m-auto mb-10">
+            <h1 class="font-bold text-xl ">Available in Thiruvananthapuram this weekend ></h1>
+            <div class="cnt1 flex gap-3">
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+               <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="content1 w-[90%] m-auto mb-10">
+            <h1 class="font-bold text-xl ">Stay in Idukki ></h1>
+            <div class="cnt1 flex gap-3">
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+               <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="content1 w-[90%] m-auto mb-10">
+            <h1 class="font-bold text-xl ">Available in Kozhikode this weekend ></h1>
+            <div class="cnt1 flex gap-3">
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+               <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="content1 w-[90%] m-auto mb-10">
+            <h1 class="font-bold text-xl ">Homes in Thrissur ></h1>
+            <div class="cnt1 flex gap-3">
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+               <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="content1 w-[90%] m-auto mb-10">
+            <h1 class="font-bold text-xl ">Available next month in South Goa ></h1>
+            <div class="cnt1 flex gap-3">
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+               <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="content1 w-[90%] m-auto mb-10">
+            <h1 class="font-bold text-xl ">Places to stay in North Goa ></h1>
+            <div class="cnt1 flex gap-3">
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+               <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="content1 w-[90%] m-auto mb-10">
+            <h1 class="font-bold text-xl ">Check out homes in Hyderabad ></h1>
+            <div class="cnt1 flex gap-3">
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+               <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="content1 w-[90%] m-auto mb-10">
+            <h1 class="font-bold text-xl ">Popular homes in Chennai ></h1>
+            <div class="cnt1 flex gap-3">
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+               <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="">
+                        <div class=" flex justify-between relative top-10 w-[90%] m-auto">
+                            <p class="h-[30px] w-30 bg-gray-200 text-center rounded-3xl text-sm">Guests favourite</p>
+                            <div class=""><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <img src="/assets/h1.jpeg" alt="" class="h-[185px] w-[185px] rounded-2xl">
+                    </div>
+                    <div class="dis pl-1">
+                        <p class="text-sm font-bold text-black">Flat in Bangalore Urban</p>
+                        <p class="text-sm text-gray-500">₹3,618 for 2 night.⭐4.81</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
