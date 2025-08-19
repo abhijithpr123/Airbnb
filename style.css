@@ -1,43 +1,86 @@
-.logo2{
-  display: none;
-}
 
-
-@media screen and (max-width: 2560px){
-  .innav {
-    width: 80%;
-    margin:auto auto;
-  }
-  .innav1{
-    width: 40%;
-  }
+.card1{
+  flex-shrink: 0;
 }
-@media screen and (max-width: 1440px)and (min-width: 768px) {
-  .main {
+.cnt1{
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+@media  screen and   (min-width: 1942px) and (max-width: 2560px){
+    .nav{
+      width: 80%;
+      margin: auto auto;
+    }
+    .cnt1{
+      justify-content: space-between;
+
+    }
+    .content1{
+      width: 80%;
+      margin: auto auto;
+    }
+    .content1 .cnt1{
+      width: 100%;
+    }
+    .foot{
+      width: 80%;
+      margin: auto auto;
+    }
+    /* .card1{
+      height: 300px;
+      width: 300px;
+    } */
+    .incard img{
+      width: 300px;
+      height: 300px;
+    }
+}
+@media screen and (min-width: 1943) and (max-width: 767) {
+  .foot{
     width: 100%;
-    margin:auto auto;
   }
-  .innav{
-    width: 100%;
-  }
-  .innav1{
-    width: 90%;
-  }
-  .btn1{
-    display: none;
-  }
-  .menu{
-    justify-content: end;
-    padding-right: 20px;
-  }
+  .content1{
+      width: 80%;
+      margin: auto auto;
+    }
 }
 
-@media screen and (max-width: 768px)and (min-width: 425px) {
-  .logo{
-    display: none;
-  }
-  .logo2{
-    display: block;
-  }
 
+
+
+
+
+
+ /* @media (max-width: 1439px){
+    .nav{
+      width: 80%;
+      margin: auto auto;
+    }
+    .cnt1{
+      justify-content: space-between;
+
+    }
+    .content1{
+      width: 80%;
+      margin: auto auto;
+    }
+    .content1 .cnt1{
+      width: 100%;
+    }
+    .foot{
+      width: 80%;
+      margin: auto auto;
+    }
+    
 }
+@media (max-width: 2560px) {
+  .card1{
+      height: 300px;
+      width: 300px;
+    }
+    .incard img{
+      width: 300px;
+      height: 200px;
+    }
+  
+} */
