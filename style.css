@@ -1,6 +1,11 @@
-
+.secondlogo{
+  display: none;
+}
 .card1{
   flex-shrink: 0;
+}
+.extraint span{
+  display: none;
 }
 .cnt1{
   overflow-x: scroll;
@@ -9,7 +14,7 @@
 .listandinp input{
   display: none;
 }
-@media  screen and   (min-width: 1942px) and (max-width: 2560px){
+@media  screen and   (min-width: 1441px) and (max-width: 2560px){
     .nav{
       width: 80%;
       margin: auto auto;
@@ -17,6 +22,10 @@
     .cnt1{
       justify-content: space-between;
 
+    }
+    ul{
+      justify-content: center;
+      gap: 20px;
     }
     .content1{
       width: 80%;
@@ -26,7 +35,7 @@
       width: 100%;
     }
     .foot{
-      width: 80%;
+      width: 90%;
       margin: auto auto;
     }
     .incard img{
@@ -34,7 +43,7 @@
       height: 300px;
     }
 }
-@media screen and (min-width: 1439px) and (max-width: 1943px) {
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
   .foot{
     width: 100%;
   }
@@ -42,12 +51,69 @@
       width: 90%;
       margin: auto auto;
     }
-    /* .incard img{
-      width: 250px;
-      height: 250px;
-    } */
+      .incard img{
+        width: 180px;
+        height: 180px;
+      }
+    .nav{
+      width: 90%;
+    }
 }
-@media screen and (min-width: 1023px) and (max-width: 1440px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .nav{
+    width: 100%;
+    margin: auto auto;  
+  }
+  .menu{
+    justify-content: center;
+    flex: 1;
+  }
+  .navlist{
+    
+    flex: 6;
+  }
+  .logo{
+    flex: 1;
+  }
+  .btn1{
+    display: none;
+  }
+  .inp{
+    width: 80%;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .firstlogo{
+    display: none;
+  }
+  .secondlogo{
+    display: block;
+  }
+  .nav{
+    width: 100%;
+  }
+  .iner img{
+    width: 35px;
+    height: 35px;
+  }
+  .iner p{
+    font-size: small;
+  }
+  .iner{
+    gap: 2px;
+  }
+  
+  .inp{
+    width: 90%;
+  }
+  
+}
+@media screen and (min-width:376px) and (max-width:425px) {
+  .main{
+    width: 100%;
+  }
+}
+/* @media screen and (min-width: 1023px) and (max-width: 1440px) {
   .listandinp input{
     margin: auto;
   display: block;
@@ -75,7 +141,10 @@
     width: 80%;
     justify-content: space-between;
   }
+  .extraint span{
+  display: block;
 }
+} */
 
 
 
